@@ -1,6 +1,3 @@
-ORACLE     
-  
-  ORA-01950: 테이블스페이스 'USERS'에 대한 권한이 없습니다.
-- ALTER USER 유저명 DEFAULT TABLESPACE USERS QUOTA UNLIMITED ON USERS;  
+에러 모아둔것.    
 
-MS SQL
+[SQL 관련](https://github.com/doridam1116/ErrorReport/blob/main/SQL)
