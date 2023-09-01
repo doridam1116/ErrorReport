@@ -1,0 +1,26 @@
+System.InvalidOperationException: 'SetCompatibleTextRenderingDefault는 응용 프로그램에 첫 번째 IWin32Window 개체가 만들어지기 전에 호출해야 합니다.'  
+문제 코드 : 
+
+```cs
+internal static class Program
+    {
+        public static readonly Form1 form1 = new Form1();
+        public static readonly Form2 form2 = new Form2();
+
+
+        /// <summary>
+        /// 해당 애플리케이션의 주 진입점입니다.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(form1);
+        }
+    }
+  ```
+
+에러 발생 이유 : 
+- SetCompatibleTextRenderingDefault() : 화면 랜더링 타입을 정하는 메서드이다. 
+  화면 랜더링 이전 static으로 form1, form2가 생성되어 랜더링 방식을 설정하지 못해 발생하는 에러.
