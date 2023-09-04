@@ -22,3 +22,8 @@ internal static class Program
 에러 발생 이유 : 
 - SetCompatibleTextRenderingDefault() : 화면 랜더링 타입을 정하는 메서드이다. 
   화면 랜더링 이전 static으로 form1, form2가 생성되어 랜더링 방식을 설정하지 못해 발생하는 에러.
+
+
+※ System.InvalidCastException: ''Newtonsoft.Json.Linq.JObject' 형식 개체를 '_2nd_POS.DataAccess.Branch' 형식으로 캐스팅할 수 없습니다.'
+에러 발생 이유 : 
+- JsonConvert.DeserializeObject<Object>(data) 는 Json Object 이기때문에 C# Object로 캐스팅 불가함.
