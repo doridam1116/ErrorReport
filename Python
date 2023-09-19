@@ -1,0 +1,10 @@
+## 파이썬 관련 에러
+
+# 아나콘다
+
+에 : Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+원 : 아나콘다가 구버전일때 발생
+해 : Anaconda Prompt를 열어젖혀서 아래 코드 순서대로 입력 / 업데이트 하는거임
+      pip install --upgrade pip
+      conda update -n base conda
+      conda update --all
