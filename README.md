@@ -4,3 +4,4 @@
 
 [SQL 관련](https://github.com/doridam1116/ErrorReport/blob/main/SQL)
 
+[Python 관려](https://github.com/doridam1116/ErrorReport/blob/main/Python)
