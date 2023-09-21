@@ -8,3 +8,8 @@
       pip install --upgrade pip
       conda update -n base conda
       conda update --all
+
+# 파이썬
+에 : truncated \UXXXXXXXX escape
+원 : \를 써서
+해 : \를 /로 바꾸기
